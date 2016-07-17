@@ -1,0 +1,350 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .hero {
+    .top-text-wrap {
+      .container {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        .top-text {
+          width: 350px;
+          h1 {
+            font-size: 31px;
+          }
+          p {
+            font-size: 16px;
+            max-width: 330px;
+          }
+        }
+        .try {
+          .try-btn {
+            font-size: 16px;
+            padding: 14px 40px;
+          }
+        }
+      }
+    }
+  }
+  .signup {
+    form {
+      .form-item {
+        margin-right: 5px;
+        label {
+          font-size: 16px;
+        }
+        input {
+          width: 240px;
+          font-size: 16px;
+        }
+      }
+      button {
+        width: 245px;
+        font-size: 12px;
+        vertical-align: top;
+      }
+    }
+  }
+  /*
+  .signup {
+    form {
+      .form-item:nth-child(3) {
+        margin-right: 0;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+    }
+  }*/
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  header {
+    .header-wrapper {
+      width: 100%;
+      .brand-logo {
+        padding-left: 10px;
+      }
+      nav {
+        display: none;
+        position: absolute;
+        width: 300px;
+        height: calc(100% - 48px);
+        right: 0;
+        top: 48px;
+        z-index: 1000;
+        background-color: #f2f2f2;
+        ul {
+          .main-menu-item {
+            float: none;
+            a {
+              position: relative;
+              i {
+                position: absolute;
+                right: 28px;
+                top: 21px;
+              }
+              &:hover {
+                background-color: #e5e5e5;
+              }
+            }
+            .dropdown-menu {
+              position: relative;
+              li {
+                a {
+                  width: 300px;
+                  background-color: #e5e5e5;
+                  &:hover {
+                    background-color: #d9d9d9;
+                  }
+                }
+              }
+              .deep-menu {
+                .submenu {
+                  position: relative;
+                  left: 0;
+                  li {
+                    a {
+                      background-color: #d9d9d9;
+                      &:hover {
+                        background-color: #ccc;
+                      }
+                    }
+                  }
+                }
+                .active-submenu {
+                  display: block;
+                }
+              }
+              .deep-menu > a::after {
+                content: "\f107";
+                right: 28px;
+              }
+            }
+          }
+        }
+      }
+      .nav-active {
+        display: block;
+      }
+      .actions {
+        height: 48px;
+        form {
+          display: none;
+          position: absolute;
+          top: 48px;
+          left: 0;
+          width: 100%;
+          z-index: 99;
+          height: 80px;
+          background-color: #f2f2f2;
+          padding: 1.5em 10px;
+          .search-wrapper {
+            width: 70%;
+            margin: 0 auto;
+            position: relative;
+            input {
+              width: 100%;
+              border: none;
+            }
+            button {
+              position: absolute;
+              top: 0;
+              right: 0;
+              border: none;
+              background-color: #0078D7;
+              i {
+                color: #fff;
+              }
+            }
+          }
+        }
+        .search-toggle {
+          display: block;
+        }
+        .cart {
+          a {
+            i {
+              font-size: 21px;
+              line-height: 48px;
+            }
+          }
+        }
+        .menu-toggle {
+          display: block;
+        }
+      }
+    }
+  }
+  .hero {
+    width: 100%;
+  }
+  .signup {
+    h2 {
+      font-size: 26px;
+      line-height: 45px;
+      padding: 0 25px;
+    }
+    form {
+      .form-item
+      .form-item:nth-child(3) {
+        margin-right: 0;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .hero {
+    .hero-background {
+      height: 490px;
+      background: url('../img/banner-768max.jpg');
+      width: 752px;
+      position: absolute;
+      left: 50%;
+      margin-left: 0;
+      background-size: cover;
+    }
+    .top-text-wrap {
+      min-height: 450px;
+      padding: 20px;
+      .container {
+        width: 350px;
+        .top-text {
+          h1 {
+            margin-top: 0;
+            font-size: 26px;
+          }
+          p {
+            font-size: 16px;
+            max-width: 330px;
+          }
+        }
+      }
+    }
+  }
+  .oculus {
+    ul {
+      li {
+        width: 100%;
+      }
+    }
+  }
+  footer {
+    .container{
+      nav {
+        .column {
+          width: 100%;
+          border-bottom: 1px solid #e3e3e3;
+          h3 {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 38px;
+            position: relative;
+            span {
+              display: inline-block;
+              position: absolute;
+              right: 8px;
+              transition: all .3s ease;
+            }
+            .rotate {
+              -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
+            &:hover {
+              color: #000;
+              cursor: pointer;
+            }
+          }
+          ul {
+            display: none;
+          }
+        }
+        .contain {
+          border: none;
+          .single {
+            border-bottom: 1px solid #e3e3e3;
+          }
+        }
+      }
+      .bottom {
+        .shop {
+          border: none;
+          margin-bottom: 6px;
+        }
+        .local {
+          float: none;
+        }
+        .legal {
+          padding-top: 13px;
+        }
+      }
+    }
+  }
+  .signup {
+    h2 {
+      font-size: 23px;
+      line-height: 35px;
+      margin-bottom: 40px;
+    }
+    form {
+      padding: 0 55px;
+      .form-item {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 20px;
+        label {
+          font-size: 17px;
+        }
+        input {
+          width: 100%;
+        }
+      }
+      button {
+        font-size: 14px;
+        width: 100%;
+      }
+    }
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  header {
+    .header-wrapper {
+      nav {
+        width: 100%;
+        ul {
+          .main-menu-item {
+            .dropdown-menu {
+              li {
+                a {
+                  width: 100%;
+                }
+              }
+              .deep-menu {
+                .submenu {
+                  li {
+                    a {
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+
+}
